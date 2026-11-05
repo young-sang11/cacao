@@ -1,0 +1,23 @@
+name: Publish downloadable HTML
+on:
+  push:
+    branches: [downloads/installers]
+    paths:
+      - moa-messages.html
+      - moa-messages-html.zip
+      - HTML-SHA256SUMS.txt
+      - .github/workflows/publish-html.yml
+      - .github/publish-html.mjs
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+        with:
+          persist-credentials: false
+      - name: Verify and upload the single HTML download
+        run: node .github/publish-html.mjs
+        env:
+          GH_TOKEN: ${{ github.token }}

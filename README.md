@@ -1,15 +1,14 @@
-# 모아 메시지 0.2 설치 파일
+# 모아 메시지 — HTML 파일로 바로 열기
 
-- [Windows 설치 EXE](./moa-messages-windows-setup.exe?raw=true)
-- [갤럭시 APK](./moa-messages-android-sync.apk?raw=true)
-- [전체 소스 ZIP](./moa-messages-sync-source.zip?raw=true)
-- [SHA-256](./SYNC-SHA256SUMS.txt)
+사용자가 요청한 형식에 맞춰 단일 HTML 버전을 제공합니다. 설치 EXE나 서버 실행 없이 Edge/Chrome으로 여세요.
 
-PC 설치 → 갤럭시 설치 → 같은 공유기 네트워크에서 PC ‘갤럭시 연결’ QR 확인 → 갤럭시 ‘동의하고 연결’. PC는 유선 연결도 가능합니다.
+- [HTML 파일 직접 받기](https://github.com/young-sang11/cacao/releases/download/moa-html-v0.3.0/moa-messages.html)
+- [HTML 한 개가 들어 있는 압축 파일](./moa-messages-html.zip?raw=true)
+- [사용 안내](./HTML-사용안내.md) · [검증 범위](./HTML-검증결과.md)
 
-Windows 10/11 x64, Android 11 이상용 개발 버전입니다. 자동 검사는 통과했으나 실제 Windows 설치 및 갤럭시 실수신·QR 연결은 미검증입니다.
-기본 동기화는 같은 로컬 네트워크용입니다. SMS·첨부파일·AI·일정은 후속 단계입니다.
-개발용 서명/서명 없는 설치 프로그램으로 운영체제 설치 확인이 추가로 나타날 수 있습니다.
+파일을 내려받아 더블클릭하세요. 압축 파일을 받은 경우 압축을 풀고 ‘모아메시지.html’을 여세요.
+메시지 가져오기·검색·일괄 복사·원문에 연결한 기본 답장 5개·사진/PDF/문서 첨부·백업·암호 잠금을 제공합니다.
+자동 수신·기기 자동 동기화·실제 AI 답장 생성은 이 HTML에서 제공하지 않습니다.
 
-GitHub 로그인이 요구되면 이 저장소 접근 권한이 있는 계정으로 로그인하세요.
-파일 페이지의 Download raw file 메뉴로도 저장할 수 있습니다.
+기존 Windows/Android 설치 파일은 이전 별도 구현이며 HTML을 사용하는 데 필요하지 않습니다.
+전체 프로젝트 소스는 `moa-messages-sync-source.zip`, 각 파일의 체크섬은 `HTML-SHA256SUMS.txt`와 `SYNC-SHA256SUMS.txt`에 있습니다.
